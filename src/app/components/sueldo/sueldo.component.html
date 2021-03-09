@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-6">
+            <div id="list">
+                <ul class="list-group" *ngFor="let trabajador of data">
+                    <li class="list-group-item"><b>Trabajador: </b> {{ trabajador.Nombre }} {{ trabajador.Apellido }} <b>Sueldo: </b> {{ trabajador.Sueldo }}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-6">
+            <img class="img-thumbnail" src="../../../assets/img/sueldo.jpg">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-5">
+            <div class="card">
+                <div class="card-header">
+                    Calculadora
+                </div>
+                <div class="card-body">
+                    <div>
+                        <input class="form-control" type="text" readonly value="{{value}}">
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-4" *ngFor="let button of buttons">
+                                <button class="form-control" (click)="addData(button)">
+									{{ button }}
+								</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-7">
+            <h5>Total de compras</h5>
+            <b>{{ result }}</b>
+        </div>
+    </div>
+</div>
